@@ -1,0 +1,22 @@
+.List {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.List:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 1px;
+  background-color: #9e9e9e;
+}
+
+.List:not(:first-child) {
+  margin-top: 10px;
+}

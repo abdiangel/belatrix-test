@@ -1,0 +1,8 @@
+.ListItem:not(:last-child) {
+  padding-bottom: 5px;
+}
+
+.ListItem__name {
+  margin-right: 1rem;
+  color: #2196f3;
+}
